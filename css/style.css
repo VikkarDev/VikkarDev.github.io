@@ -30,7 +30,7 @@ body{
     border-top-right-radius: 15px;
 }
 .buttons-box{
-    margin: 35px 15px;
+    margin: 5px 15px;
 }
 .btn{
     width: 60px;
@@ -48,8 +48,8 @@ body{
     background: rgba(0, 0, 0, 0.2);
 }
 .cbtn, .cbtn:hover{
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
+    background: rgb(54, 55, 58);
+    color: white; 
 }
 .mbtn, .mbtn:hover{
     background: rgba(0, 0, 0, 0.4);
