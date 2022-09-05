@@ -4,7 +4,7 @@ let score = 0;     // Current player score
 
 let localStorage = window.localStorage;
 
-if (!localStorage.getItem('ythtk')) localStorage.setItem('ythtk', 0);
+if (!localStorage.getItem('ytfeedback')) localStorage.setItem('ythwes', 0);
 if (!localStorage.getItem('twhs')) localStorage.setItem('twhs', 0);
 
 let game = {left: null, right: null} // This holds the left and right videos / clips
@@ -13,7 +13,7 @@ let timeouts = []
 
 function load() {
     document.getElementById('ytbtn').addEventListener('mouseover', () => {
-        document.getElementById('mode-desc').innerHTML = "Pick the more popular option between two of TommyKays's 500+ YouTube videos"
+        document.getElementById('mode-desc').innerHTML = "Pick the more popular option between two of FeedBackGaming's 1500+ YouTube videos"
         document.getElementById('lfrog').classList = `wobble button-logo`
     })
 
@@ -36,7 +36,7 @@ function load() {
 
 // Start the game
 function start(gamemode = lastGm) {
-    if (gamemode == 0) document.getElementById('high-score').innerHTML = `High Score: ${localStorage.getItem('ythtk')}`
+    if (gamemode == 0) document.getElementById('high-score').innerHTML = `High Score: ${localStorage.getItem('ythwes')}`
     if (gamemode == 1) document.getElementById('high-score').innerHTML = `High Score: ${localStorage.getItem('twhs')}`
 
     score = 0;
@@ -155,9 +155,9 @@ function guess(higher, number) {
                 document.getElementById('score').classList = `score-bump`
                 document.getElementById('score').classList = `score-bump`
 
-                if (lastGm == 0 && (localStorage.getItem('ythtk') < score)) {
+                if (lastGm == 0 && (localStorage.getItem('ythwes') < score)) {
                     document.getElementById('high-score').innerHTML = `High Score: ${score}`
-                    localStorage.setItem('ythtk', score)
+                    localStorage.setItem('ythwes', score)
                     document.getElementById('high-score').classList = `score-bump`
                 }
 

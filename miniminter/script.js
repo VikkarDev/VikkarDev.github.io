@@ -4,7 +4,7 @@ let score = 0;     // Current player score
 
 let localStorage = window.localStorage;
 
-if (!localStorage.getItem('ythtk')) localStorage.setItem('ythtk', 0);
+if (!localStorage.getItem('ytminiminter')) localStorage.setItem('ythtk', 0);
 if (!localStorage.getItem('twhs')) localStorage.setItem('twhs', 0);
 
 let game = {left: null, right: null} // This holds the left and right videos / clips
