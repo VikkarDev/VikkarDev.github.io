@@ -4,7 +4,7 @@ let score = 0;     // Current player score
 
 let localStorage = window.localStorage;
 
-if (!localStorage.getItem('ytfeedback')) localStorage.setItem('ythwes', 0);
+if (!localStorage.getItem('ytfeedback')) localStorage.setItem('ytfeedback', 0);
 if (!localStorage.getItem('twhs')) localStorage.setItem('twhs', 0);
 
 let game = {left: null, right: null} // This holds the left and right videos / clips
@@ -36,7 +36,7 @@ function load() {
 
 // Start the game
 function start(gamemode = lastGm) {
-    if (gamemode == 0) document.getElementById('high-score').innerHTML = `High Score: ${localStorage.getItem('ythwes')}`
+    if (gamemode == 0) document.getElementById('high-score').innerHTML = `High Score: ${localStorage.getItem('ytfeedback')}`
     if (gamemode == 1) document.getElementById('high-score').innerHTML = `High Score: ${localStorage.getItem('twhs')}`
 
     score = 0;
@@ -155,9 +155,9 @@ function guess(higher, number) {
                 document.getElementById('score').classList = `score-bump`
                 document.getElementById('score').classList = `score-bump`
 
-                if (lastGm == 0 && (localStorage.getItem('ythwes') < score)) {
+                if (lastGm == 0 && (localStorage.getItem('ytfeedback') < score)) {
                     document.getElementById('high-score').innerHTML = `High Score: ${score}`
-                    localStorage.setItem('ythwes', score)
+                    localStorage.setItem('ytfeedback', score)
                     document.getElementById('high-score').classList = `score-bump`
                 }
 
