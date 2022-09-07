@@ -96,6 +96,7 @@ a {
     left: 50px;
     pointer-events: none;
     z-index: 10;
+    border-radius: 50%;
 }
 
 .button-div {
