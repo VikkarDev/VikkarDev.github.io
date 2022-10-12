@@ -1,3 +1,4 @@
+// CODED BY Spiralio
 let currentBg = 4; // The background that the last 
 let lastGm = 0;    // Last gamemode played (0: YT, 1: Clips)
 let score = 0;     // Current player score

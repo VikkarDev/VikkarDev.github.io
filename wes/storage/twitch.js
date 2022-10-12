@@ -1,3 +1,4 @@
+// CODED BY Spiralio
 let clips = [];
 
 function resetClips() {
