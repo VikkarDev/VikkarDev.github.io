@@ -14,7 +14,7 @@ let timeouts = []
 
 function load() {
     document.getElementById('ytbtn').addEventListener('mouseover', () => {
-        document.getElementById('mode-desc').innerHTML = "Pick the more popular option between two of Sidemen's 250+ YouTube videos"
+        document.getElementById('mode-desc').innerHTML = "Pick the more popular option between two of Sidemen's 330+ YouTube videos"
         document.getElementById('lfrog').classList = `wobble button-logo`
     })
 
